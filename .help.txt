@@ -1,0 +1,6 @@
+git add .
+
+git commit m "Commit meassge"
+
+git push -u origin main
+
