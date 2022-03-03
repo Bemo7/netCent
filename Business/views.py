@@ -19,3 +19,6 @@ def restricted(request):
 
 def Home(request):
     return HttpResponse('The Home page is under construction...')
+
+def Contact(request):
+    return HttpResponse('The Contact page is under construction...')
