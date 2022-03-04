@@ -11,7 +11,7 @@ from django.http import HttpResponse
     # Transform data
     # Send emails
 
-def Hello(request):
+def Home(request):
     return render(request, 'hello.html', {'name' : 'Everyone'})
 
 def restricted(request):
