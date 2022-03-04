@@ -11,14 +11,12 @@ from django.http import HttpResponse
     # Transform data
     # Send emails
 
-def say_hello(request):
+def Hello(request):
     return render(request, 'hello.html', {'name' : 'Everyone'})
 
 def restricted(request):
     return HttpResponse('Nigga! The URL says RESTRICTED'.replace('URL','route'))
 
-def Home(request):
-    return HttpResponse('The Home page is under construction...')
 
 def Contact(request):
     return HttpResponse('The Contact page is under construction...')
