@@ -28,12 +28,21 @@ def say_hello(request):
         "title": "TheFirst"
     }
     return render(request, 'hello.html', context=context )
+<<<<<<< HEAD
+=======
+
+def Home(request):
+    return render(request, 'hello.html', {'name' : 'Everyone'})
+>>>>>>> 8cfda1699cb8ca5a94b7bb41b31f7812acba9f4e
 
 def restricted(request):
     return HttpResponse('Nigga! The URL says RESTRICTED'.replace('URL','route'))
 
+<<<<<<< HEAD
 def Home(request):
     return render(request, 'Inventory/index.html')
 
+=======
+>>>>>>> 8cfda1699cb8ca5a94b7bb41b31f7812acba9f4e
 def Contact(request):
     return HttpResponse('The Contact page is under construction...')
