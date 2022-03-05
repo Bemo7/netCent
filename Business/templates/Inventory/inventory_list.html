@@ -1,0 +1,34 @@
+{% extends '../hello.html' %}
+{% block content %}
+<div class="content-section">
+    <table class="table table-stripped table-bordered table-hovet">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Quantity in Stock</th>
+                <th scope="col">Quantity Sold</th>
+                <th scope="col">Cost Per Items</th>
+                <th scope="col">Sales or Revenue</th>
+                <th scope="col">Stock Date</th>
+                <th scope="col">Last Sales Date</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for inventory in inventories %}
+            <tr style="cursor: pointer; cursor: hand;" onclick="">
+                <th scope=""row>{{ forloop.counter }}</th>
+                <th scope=""row>{{ inventory.name }}</th>
+                <th scope=""row>{{ inventory.quantity_in_stock }}</th>
+                <th scope=""row>{{ inventory.quantity_sold }}</th>
+                <th scope=""row>{{ inventory.cost_per_item }}</th>
+                <th scope=""row>{{ inventory.sales }}</th>
+                <th scope=""row>{{ inventory.stock_date }}</th>
+                <th scope=""row>{{ inventory.last_sales_date }}</th>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endblock %}
