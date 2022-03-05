@@ -4,9 +4,9 @@
 ## Username - "ben"
 ## Password - "12345678"
 
-<<<<<<< HEAD
-### Group Alpha
-=======
 ### Group Alpha 
 ### VUG/CSC/18/2752
->>>>>>> bef10505c224aacb477889633a7b5560abdfcb7d
+### VUG/CSC/18/2528
+### VUG/CSC/17/2378
+### VUG/CSC/18/2654
+### VUG/CSC/18/2770
