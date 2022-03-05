@@ -14,7 +14,6 @@ from .models import Inventory
     # Transform data
     # Send emails
 
-<<<<<<< HEAD
 def inventory_list(request):
     inventories = Inventory.objects.all() #Returns all inventories in the database
     context = {
@@ -29,19 +28,12 @@ def say_hello(request):
         "title": "TheFirst"
     }
     return render(request, 'hello.html', context=context )
-=======
+
 def Home(request):
     return render(request, 'hello.html', {'name' : 'Everyone'})
->>>>>>> bef10505c224aacb477889633a7b5560abdfcb7d
 
 def restricted(request):
     return HttpResponse('Nigga! The URL says RESTRICTED'.replace('URL','route'))
-
-<<<<<<< HEAD
-def Home(request):
-    return render(request, 'Inventory/index.html')
-=======
->>>>>>> bef10505c224aacb477889633a7b5560abdfcb7d
 
 def Contact(request):
     return HttpResponse('The Contact page is under construction...')
