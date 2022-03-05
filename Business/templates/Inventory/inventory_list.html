@@ -17,7 +17,7 @@
         </thead>
         <tbody>
             {% for inventory in inventories %}
-            <tr style="cursor: pointer; cursor: hand;" onclick="">
+            <tr style="cursor: pointer; cursor: hand;">
                 <th scope=""row>{{ forloop.counter }}</th>
                 <th scope=""row>{{ inventory.name }}</th>
                 <th scope=""row>{{ inventory.quantity_in_stock }}</th>
