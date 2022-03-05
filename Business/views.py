@@ -29,11 +29,5 @@ def say_hello(request):
     }
     return render(request, 'hello.html', context=context )
 
-def restricted(request):
-    return HttpResponse('Nigga! The URL says RESTRICTED'.replace('URL','route'))
-
 def Home(request):
     return render(request, 'Inventory/index.html')
-
-def Contact(request):
-    return HttpResponse('The Contact page is under construction...')

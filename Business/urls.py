@@ -4,7 +4,6 @@ from . import views
 from .views import inventory_list
 # URLConf
 urlpatterns = [
-    path('hello/', views.say_hello, name = "hello"),
-    path('restricted/', views.restricted, name = "restricted"),
+    path('/', views.say_hello, name = "hello"),
     path('', inventory_list, name="inventory_list" )
 ]
