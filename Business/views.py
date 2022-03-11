@@ -31,3 +31,6 @@ def say_hello(request):
 
 def Home(request):
     return render(request, 'Inventory/index.html')
+
+#def per_product_view(request, pk):
+    

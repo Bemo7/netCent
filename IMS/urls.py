@@ -15,10 +15,12 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.contrib.auth import views as auth_views
 #import debug_toolbar
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('Business.urls')), #All requests that starts with playground should be handled by the playground app
-    #path('__debug__/', include('debug_toolbar.urls'))
+    path('inventory/', include('Business.urls')), #All requests that starts with playground should be handled by the playground app
+    #path('__debug__/', include('debug_toolbar.urls')),
+    path('',auth_views.LoginView.as_view(template_name = "inventory_system/login.html"), name="login")
 ]
