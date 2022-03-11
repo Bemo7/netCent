@@ -127,6 +127,9 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATICFILES_DIR = (
+    os.path.join(BASE_DIR, 'static'),
+)
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
@@ -135,3 +138,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 #Django Crispy Forms
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# login urls
+LOGIN_REDIRECT_URL = "/inventory"
+LOGIN_URL = "login"
