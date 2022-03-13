@@ -1,9 +1,6 @@
 # Net-Centric
 # Simple inventory management system
 
-## Username - "ben"
-## Password - "12345678"
-
 ### Group Alpha 
 ### VUG/CSC/18/2752
 ### VUG/CSC/18/2528
@@ -13,3 +10,4 @@
 ### VUG/CSC/18/2644
 ### VUG/CSC/18/2845
 
+#### Use 'createsuperuser' in the terminal to create a new user
